@@ -81,9 +81,13 @@
                     <h2>% HAPPINESS</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <button class="btn">KNOW MORE</button>
+                    <div class="percentage-graph">
+                        <img src="./assets/graph01.png" alt="">
+                    </div>
+                    
                 </div>
                 <div class="percentage-chart">
-                    <img src="images/percentage-chart.png" alt="Happiness Percentage Chart">
+                    <img src="./assets/img03.png">
                 </div>
             </div>
         </div>
@@ -95,14 +99,14 @@
                 <h2>ABOUT US</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                 <div class="about-image">
-                    <img src="images/about-image.jpg" alt="Team working together">
+                    <img src="./assets/img01.png">
                 </div>
                 <button class="btn">KNOW MORE</button>
             </div>
         </div>
     </section>
 
-    <section id="team" class="team">
+    <section class="team">
         <div class="container">
             <div class="team-content">
                 <div class="team-text">
@@ -111,46 +115,59 @@
                     <button class="btn">KNOW MORE</button>
                 </div>
                 <div class="team-image">
-                    <img src="images/team-image.jpg" alt="Team members">
+                    <img src="./assets/img02.png">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="try-method" class="try-method">
+    <section class="try-method">
         <div class="container">
             <div class="try-method-content">
                 <div class="try-method-image">
-                    <img src="images/couple-talking.jpg" alt="Couple talking">
+                    <img src="./assets/img03.png" >
                 </div>
                 <div class="try-method-text">
                     <h2>TRY OUR METHOD FOR FREE</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button class="btn">LEARN MORE</button>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque, officiis sed laborum excepturi illo. Dolores nam accusamus, et qui at ex, animi odit deleniti fugit eius debitis consectetur excepturi!</p>
+                    <button class="btn">Read More</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="newsletter" class="newsletter">
+    <section class="newsletter">
         <div class="container">
             <div class="newsletter-content">
                 <div class="newsletter-form">
                     <form>
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                        <div class="form-name">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sur-name">Surname</label>
+                                <input type="text" name="surname" required>
+                            </div>
                         </div>
+                        
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4"></textarea>
+                            <textarea name="message" rows="4"></textarea>
                         </div>
                     </form>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa necessitatibus ullam praesentium possimus facilis quibusdam consequuntur optio nihil minima inventore nisi impedit corporis voluptates, quas dolorem? Quam distinctio error ad!</p>
                 </div>
+
                 <div class="newsletter-text">
                     <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -160,7 +177,7 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section class="contact">
         <div class="container">
             <div class="contact-content">
                 <h2>CONTACT</h2>
@@ -177,41 +194,33 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="images/logo.png" alt="Happiness Logo">
+                    <img src="./assets/logoWhite.png" alt="Happiness Logo">
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h3>Navigation</h3>
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#services">Services</a></li>
+                            <li><p >Home</p></li>
+                            <li><p >About Us</p></li>
+                            <li><p >Services</p></li>
                         </ul>
                     </div>
                     <div class="footer-column">
                         <h3>Information</h3>
                         <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Contact</h3>
-                        <ul>
-                            <li>Email: info@happiness.com</li>
-                            <li>Phone: +1 234 567 890</li>
-                            <li>Address: 123 Happiness St</li>
+                            <li><p>Privacy Policy</p></li>
+                            <li><p>Terms of Service</p></li>
+                            <li><p>FAQ</p></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="copyright">
-                <p>Copyright © Your Company</p>
+                <p>Copyright © Juan Camilo Rojas</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <p ><i class="fab fa-facebook-f"></i></p>
+                    <p ><i class="fab fa-twitter"></i></p>
+                    <p ><i class="fab fa-instagram"></i></p>
                 </div>
             </div>
         </div>
