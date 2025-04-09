@@ -111,7 +111,7 @@ h1{
         }
 }
 .metrics{
-    background-color: linear-gradient(to right, var(--light-gray)50%,var(--primary-color)50%);
+    background: linear-gradient(to bottom, var(--light-gray)50%,var(--primary-color)50%);
     width: 100%;
     display: flex;
     justify-content: center;
