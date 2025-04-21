@@ -477,7 +477,7 @@ h2 {
 }
 .contact{
     background: var(--primary-color);
-    height: 100vh;
+    height: 120vh;
     
     .container{
         display: flex;
@@ -512,21 +512,48 @@ footer{
     color:var(--primary-color);
     text-decoration:none;
     list-style: none;
+    height: 100vh;
+    padding: 2rem;
     .container{
         display: flex;
         flex-direction: column;
         .footer-content{
             display: flex;
             flex-direction: column;
+            gap: 12rem;
             .footer-links{
                 display: flex;
                 flex-direction: row;
+                gap: 4rem;
+                .footer-column{
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        color: var(--primary-color);
+                        font-weight: 800;
+                        font-size: 23px;
+                        }
+                    li{
+                        list-style: none;
+    
+                    }
+                }
+                
             }
         }
         .copyright{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            p{color: var(--primary-color);
+                font-weight: 700;
+                font-size: 20px;
+                }
+            .social-icons{
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+            }
         }
     }
 }
