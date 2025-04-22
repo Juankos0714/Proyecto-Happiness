@@ -3,9 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
+    max-width: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+p, h1, h2, h3 {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-word;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 body {
@@ -31,12 +48,14 @@ body {
     --light-gray: #f5f5f5;
 }
 
+
+
 .container {
     width: 100%;
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 15px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .btn {
@@ -236,78 +255,87 @@ h2 {
     
     
 }
-.percentage{
+.percentage {
     background: var(--white);
-    height: 100vh;
+    min-height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
-    .container{
+    padding: 2rem 0;
+    
+    .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        width: 100%;
     }
-    .percentage-content{
+    
+    .percentage-content {
         background: var(--light-gray);
         width: 80vw;
-        height: 65vh;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row-reverse;
         justify-content: center;
-        align-items: center;
-        gap:3rem;
-        box-shadow: 0px 5px 20px rgba(0,0,0,0.308) ;
-        .percentage-text{
-            width: 50%;
-            height: 100%;
-            padding: 2rem;
+        align-items: stretch;
+        gap: 3rem;
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.308);
+        padding-right: 2rem;
+        
+        
+        .percentage-text {
+            width: 45%; 
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap:3rem;
-            min-width: 300px; 
-            h2{
-                color:var(--primary-color);
-                font-weight: 200;
-                font-size: 80px;
-                line-height: 50px;
-                font-size: clamp(40px, 6vw, 80px);
-            }
+            gap: 2rem; 
+            min-width: 300px;
             
+            h2 {
+                color: var(--primary-color);
+                font-weight: 200;
+                font-size: clamp(40px, 6vw, 80px);
+                line-height: 1; 
+            }
         }
-        .btn{
+        
+        .btn {
             background-color: var(--secondary-color);
             color: var(--white);
             border-radius: 0%;
         }
-        .percentage-graph{
+        
+        .percentage-graph {
             width: 100%;
-            height: 100%;
             display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            padding-right:5rem ;
-            img{
+            align-items: center; 
+            justify-content: flex-end; 
+            padding-right: 2rem;
+            overflow: hidden; 
+            
+            img {
                 max-width: 100%;
-                height: auto;
+                max-height: 100%; 
                 object-fit: contain;
+                display: block;
             }
         }
-        .percentage-chart{ 
+        
+        .percentage-chart {
             flex: 1;
             min-width: 300px;
             display: flex;
             justify-content: center;
-        img{
-            max-width: 100%;
-            height: auto;
-            object-fit: contain;
-
+            align-items: center; 
+            overflow: hidden; 
+            
+            img {
+                max-width: 95%;
+                max-height: 100%;
+                object-fit: contain;
+                display: block;
+            }
         }
-        }
-
     }
 }
 .about{
@@ -317,7 +345,7 @@ h2 {
     align-items: center;
     width: auto;
 
-    height: 90vh;
+    height: 110vh;
     .container{
         display: flex;
         flex-direction: column;
@@ -424,7 +452,7 @@ h2 {
         .newsletter-form{
             background: var(--secondary-color);
             width: 40vw;
-            height: 60vh;
+            height: 80vh;
             display: flex;
             flex-direction: column;
             color: var(--white);
@@ -570,4 +598,636 @@ footer{
         width: 50%;
     }
 }
+@media (max-width: 1280px) {
+    h1 {
+        font-size: clamp(50px, 7vw, 90px);
+        line-height: 1.2;
+    }
+    
+    h2 {
+        font-size: clamp(35px, 5vw, 60px) !important;
+        line-height: 1.2 !important;
+    }
+    .hero-text {
+        width: 100%;
+    }
+    
+    .hero .container {
+        gap: 2rem;
+        align-items: center;
+    }
+    .metrics .container {
+        width: 90%;
+    }
+    
+    .metrics .metrics-content {
+        gap: 2rem;
+    }
+    
+    .metrics .metrics-text {
+        width: auto;
+        min-width: 200px;
+    }
+    .percentage {
+        height: auto;
+        min-height: 90vh;
+        padding: 2rem 0;
+    }
+    
+    .percentage .percentage-content {
+        width: 90%;
+        height: auto;
+        min-height: 500px;
+        padding: 2rem;
+    }
+    
+    .percentage .percentage-text {
+        padding: 1rem;
+    }
+    
+    .percentage-graph {
+        padding-right: 1rem !important;
+    }
+    .help {
+        padding: 3rem 1rem;
+    }
+    
+    .help h1 {
+        width: auto;
+        max-width: 80%;
+    }
+    
+    .help .help-content {
+        align-items: center;
+    }
+    .about, .team, .try-method {
+        height: auto;
+        min-height: 80vh;
+        padding: 3rem 0;
+    }
+    .newsletter {
+        height: auto;
+        min-height: 80vh;
+        padding: 3rem 0;
+    }
+    
+    .newsletter .newsletter-content {
+        gap: 2rem;
+    }
+    
+    .newsletter .newsletter-form,
+    .newsletter .newsletter-text {
+        width: 45%;
+        height: auto;
+        min-height: 500px;
+    }
+    .contact {
+        height: auto;
+        padding: 2rem 0;
+    }
+    
+    .contact .contact-content .map iframe {
+        width: 100%;
+        max-width: 100%;
+        height: 500px;
+    }
+}
+@media (max-width: 920px) {
+    .container {
+        padding: 0 10px;
+    }
+    header .container {
+        justify-content: center;
+        gap: 1rem;
+        padding: 0 5px;
+    }
+    .hero .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero .hero-text {
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    
+    .hero .hero-image {
+        display: flex;
+        justify-content: center;
+        max-width: 90%;
+    }
+    .metrics {
+        padding: 1rem 0;
+    }
+    
+    .metrics .container {
+        width: 95%;
+    }
+    
+    .metrics .metrics-content {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .metrics .metrics-text {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .metrics .metrics-charts {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .metrics .chart {
+        max-width: 45%;
+    }
+    .help {
+        padding: 2rem 1rem;
+    }
+    
+    .help h1 {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        font-size: clamp(40px, 8vw, 70px);
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+    
+    .help .help-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .help .help-text {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+    .percentage .percentage-content {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    
+    .percentage .percentage-text {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .percentage .percentage-graph {
+        width: 100%;
+        align-items: center;
+        padding-right: 0 !important;
+    }
+    
+    .percentage .percentage-chart {
+        width: 100%;
+        max-width: 400px;
+    }
+    .about .about-content {
+        padding: 1rem;
+    }
+    
+    .about .about-image {
+        max-width: 80%;
+    }
+    .team .team-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    
+    .team .team-text {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .team .team-image {
+        max-width: 80%;
+    }
+    .try-method .try-method-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    
+    .try-method .try-method-text {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .try-method .try-method-text h2 {
+        font-size: clamp(35px, 8vw, 60px) !important;
+        line-height: 1.2 !important;
+    }
+    
+    .try-method .try-method-image {
+        max-width: 80%;
+    }
+    .newsletter .newsletter-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .newsletter .newsletter-form,
+    .newsletter .newsletter-text {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .newsletter .newsletter-text {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .newsletter .newsletter-text h2 {
+        font-size: clamp(35px, 7vw, 50px) !important;
+        line-height: 1.2 !important;
+    }
+    .contact .contact-content {
+        padding: 2rem 1rem;
+    }
+    
+    .contact .contact-content .map {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    header {
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 1rem;
+    }
+    
+    nav ul li {
+        margin: 0 8px;
+    }
+    .hero {
+        margin: 2rem 0;
+    }
+    
+    .hero .hero-text {
+        gap: 1.5rem;
+        padding: 0;
+    }
+    .metrics .metrics-content {
+        padding: 1rem 0.5rem;
+    }
+    
+    .metrics .metrics-charts {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .metrics .chart {
+        max-width: 90%;
+    }
+    footer {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    
+    footer .footer-content {
+        gap: 3rem;
+    }
+    
+    footer .footer-links {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    footer .copyright {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem 0;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 8px;
+    }
+    
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    header {
+        padding: 8px 0;
+    }
+    
+    .logo img {
+        height: 30px;
+    }
+    
+    nav ul {
+        gap: 0;
+    }
+    
+    nav ul li {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+    .hero {
+        margin: 1.5rem 0;
+    }
+    
+    .hero .hero-text {
+        gap: 1rem;
+    }
+    
+    .hero .hero-text h1 {
+        font-size: clamp(35px, 9vw, 45px);
+        line-height: 1.1;
+    }
+    .metrics {
+        padding: 0;
+    }
+    
+    .metrics .container {
+        width: 98%;
+        padding: 0.5rem;
+    }
+    
+    .metrics .metrics-content {
+        padding: 0.5rem;
+    }
+    
+    .metrics .metrics-text h2 {
+        font-size: clamp(30px, 7vw, 40px) !important;
+        line-height: 1.1 !important;
+    }
+    .help {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .help h1 {
+        font-size: clamp(30px, 8vw, 40px);
+        line-height: 1.1;
+    }
+    
+    .help .help-text {
+        gap: 1.5rem;
+    }
+    .percentage .percentage-content {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .percentage .percentage-text {
+        padding: 0.5rem;
+        gap: 1.5rem;
+    }
+    
+    .percentage .percentage-text h2 {
+        font-size: clamp(30px, 8vw, 40px) !important;
+        line-height: 1.1 !important;
+    }
+    .about .about-content h2 {
+        font-size: clamp(30px, 7vw, 40px);
+        line-height: 1.1;
+    }
+    .team .team-text h2 {
+        font-size: clamp(30px, 7vw, 40px);
+        line-height: 1.1;
+    }
+    .team .team-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    /* Corrección específica para try-method-content */
+    .try-method .try-method-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .try-method .try-method-text h2 {
+        font-size: clamp(28px, 7vw, 35px) !important;
+        line-height: 1.1 !important;
+    }
+    .newsletter .form-name {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .newsletter .form-group {
+        margin-bottom: 0.5rem;
+    }
+    
+    .newsletter .form-group textarea {
+        height: 100px;
+    }
+    
+    .newsletter .newsletter-text h2 {
+        font-size: clamp(28px, 7vw, 35px) !important;
+        line-height: 1.1 !important;
+    }
+    .contact .contact-content {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .contact .contact-content h2 {
+        font-size: clamp(35px, 8vw, 45px);
+        line-height: 1.1;
+    }
+    
+    .contact .contact-content .map iframe {
+        height: 300px;
+    }
+    footer {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    footer .footer-content {
+        gap: 2rem;
+    }
+    
+    footer .footer-links {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    footer .footer-column p {
+        font-size: 16px;
+    }
+    
+    footer .copyright p {
+        font-size: 14px;
+    }
+    
+    footer .social-icons {
+        gap: 0.8rem;
+    }
+}
+.newsletter {
+    height: auto;
+    min-height: 90vh;
+    padding: 2rem 0;
+}
 
+.newsletter .newsletter-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.newsletter .newsletter-form,
+.newsletter .newsletter-text {
+    width: auto;
+    height: auto;
+    min-height: auto;
+    max-width: 600px;
+    overflow: hidden; 
+}
+
+.newsletter .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-height: 600px; 
+    overflow-y: auto; 
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .newsletter .newsletter-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .newsletter .newsletter-form,
+    .newsletter .newsletter-text {
+        width: 90%;
+        min-width: 90%;
+        padding: 1.5rem;
+        min-height: 0; 
+        max-height: none; 
+    }
+    
+    .newsletter .form-group {
+        margin-bottom: 0.8rem;
+    }
+    
+    .newsletter .newsletter-text {
+        text-align: center;
+        align-items: center;
+    }
+    .newsletter .form-group input {
+        height: 36px;
+        padding: 5px 8px;
+        box-sizing: border-box;
+    }
+    .newsletter .form-group label {
+        display: block;
+        margin-bottom: 3px;
+        font-size: 0.95em;
+    }
+    .newsletter .newsletter-form p {
+        font-size: 0.9em;
+        line-height: 1.4;
+    }
+}
+.hero .hero-text,
+.metrics .metrics-text,
+.help .help-text,
+.percentage .percentage-text,
+.about .about-content,
+.team .team-text,
+.try-method .try-method-text,
+.newsletter .newsletter-text,
+.contact .contact-content {
+    text-align: left;
+}
+@media (max-width: 768px) {
+    .hero .hero-text,
+    .metrics .metrics-text,
+    .help .help-text,
+    .percentage .percentage-text,
+    .about .about-content,
+    .team .team-text,
+    .try-method .try-method-text,
+    .newsletter .newsletter-text,
+    .contact .contact-content {
+        text-align: center;
+        align-items: center;
+    }
+    .newsletter .form-group label {
+        text-align: left;
+        display: block;
+        margin-bottom: 5px;
+    }
+    @media (max-width: 480px) {
+        .newsletter .newsletter-form,
+        .newsletter .newsletter-text {
+            width: 95%;
+            padding: 1rem;
+            max-height: none; 
+        }
+        
+        .newsletter .form-name {
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .newsletter .form-group input,
+        .newsletter .form-group textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+        }
+        
+        .newsletter .form-group textarea {
+            height: 100px;
+            min-height: 0; 
+            resize: vertical; 
+        }
+        .newsletter .newsletter-form p {
+            margin-top: 10px;
+            max-height: 80px;
+            overflow-y: auto;
+            font-size: 0.9em;
+        }
+    }
+}

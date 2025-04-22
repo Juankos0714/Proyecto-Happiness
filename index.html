@@ -6,7 +6,6 @@
     <title>Happiness - Mejora tu felicidad</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/d03d2af969.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
     <header>
@@ -25,17 +24,16 @@
         </div>
     </header>
 
-    <section id="hero" class="hero">
-        <div class="container hero-content">
-            <div class="hero-image">
-                <img src="./assets/img01.png">
-            </div>
+    <section id="home" class="hero">
+        <div class="container">
             <div class="hero-text">
                 <h1>HOW HAPPY ARE YOU?</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <button class="btn">LEARN MORE</button>
             </div>
-
+            <div class="hero-image">
+                <img src="./assets/img01.png" alt="Person feeling happy">
+            </div>
         </div>
     </section>
 
@@ -43,9 +41,9 @@
         <div class="container">
             <div class="metrics-content">
                 <div class="metrics-text">
-                    <h2>HAPPINESS iN NUMBERS</h2>
+                    <h2>HAPPINESS IN NUMBERS</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
-                    <button class="btn">Read More ></button>
+                    <button class="btn">Read More &gt;</button>
                 </div>
                 <div class="metrics-charts">
                     <div class="chart">
@@ -65,17 +63,16 @@
             <div class="help-content">
                 <div class="help-text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illo eos in suscipit unde, magni facilis, fugit commodi explicabo officia voluptas labore, dolore asperiores ab voluptatem consectetur possimus. At, excepturi.</p>
-                    <button class="btn">Read more</button></div>
-                
-                <div class="help-image">
-                    <img src="./assets/img02.png">
+                    <button class="btn">Read more</button>
                 </div>
-                
+                <div class="help-image">
+                    <img src="./assets/img02.png" alt="Happy people">
+                </div>
             </div>
         </div>
     </section>
 
-    <section  class="percentage">
+    <section class="percentage">
         <div class="container">
             <div class="percentage-content">
                 <div class="percentage-text">
@@ -83,24 +80,23 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <button class="btn">KNOW MORE</button>
                     <div class="percentage-graph">
-                        <img src="./assets/graph01.png" alt="">
+                        <img src="./assets/graph01.png" alt="Happiness percentage graph">
                     </div>
-                    
                 </div>
                 <div class="percentage-chart">
-                    <img src="./assets/img03.png">
+                    <img src="./assets/img03.png" alt="Happiness chart">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="about-content">
                 <h2>ABOUT US</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                 <div class="about-image">
-                    <img src="./assets/img01.png">
+                    <img src="./assets/img01.png" alt="Our team">
                 </div>
                 <button class="btn">KNOW MORE</button>
             </div>
@@ -116,17 +112,17 @@
                     <button class="btn">KNOW MORE</button>
                 </div>
                 <div class="team-image">
-                    <img src="./assets/img02.png">
+                    <img src="./assets/img02.png" alt="Team members">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="try-method">
+    <section id="services" class="try-method">
         <div class="container">
             <div class="try-method-content">
                 <div class="try-method-image">
-                    <img src="./assets/img03.png" >
+                    <img src="./assets/img03.png" alt="Our method">
                 </div>
                 <div class="try-method-text">
                     <h2>TRY OUR METHOD FOR FREE</h2>
@@ -145,25 +141,25 @@
                         <div class="form-name">
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" name="name" required>
+                                <input type="text" id="name" name="name" required>
                             </div>
                             <div class="form-group">
-                                <label for="sur-name">Surname</label>
-                                <input type="text" name="surname" required>
+                                <label for="surname">Surname</label>
+                                <input type="text" id="surname" name="surname" required>
                             </div>
                         </div>
                         
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" name="email" required>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" name="password" required>
+                            <input type="password" id="password" name="password" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea name="message" rows="4"></textarea>
+                            <textarea id="message" name="message" rows="4"></textarea>
                         </div>
                     </form>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa necessitatibus ullam praesentium possimus facilis quibusdam consequuntur optio nihil minima inventore nisi impedit corporis voluptates, quas dolorem? Quam distinctio error ad!</p>
@@ -178,13 +174,13 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
                 <h2>CONTACT</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-73.9876!3d40.7654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDE1JzU1LjQiTiA3M8KwNTQnNDUuNiJX!5e0!3m2!1ses!2ses!4v1600000000000!5m2!1ses!2ses" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-73.9876!3d40.7654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDE1JzU1LjQiTiA3M8KwNTQnNDUuNiJX!5e0!3m2!1ses!2ses!4v1600000000000!5m2!1ses!2ses" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
                 <button class="btn">CONTACT</button>
             </div>
@@ -199,16 +195,14 @@
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
-                        
                         <ul>
-                            <li><p >Happiness</p></li>
-                            <li><p >Happiness</p></li>
-                            <li><p >About Us</p></li>
-                            <li><p >Services</p></li>
+                            <li><p>Happiness</p></li>
+                            <li><p>Happiness</p></li>
+                            <li><p>About Us</p></li>
+                            <li><p>Services</p></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        
                         <ul>
                             <li><p>Privacy Policy</p></li>
                             <li><p>Cookies</p></li>
@@ -220,15 +214,13 @@
             <div class="copyright">
                 <p>Copyright | Juan Camilo Rojas</p>
                 <div class="social-icons">
-                    <p ><i class="fa-brands fa-instagram fa-xl"></i></p>
-                    <p ><i class="fa-brands fa-facebook fa-xl"></i></p>
-                    <p ><i class="fa-brands fa-twitter fa-xl"></i></p>
+                    <p><i class="fa-brands fa-instagram fa-xl"></i></p>
+                    <p><i class="fa-brands fa-facebook fa-xl"></i></p>
+                    <p><i class="fa-brands fa-twitter fa-xl"></i></p>
                 </div>
             </div>
         </div>
     </footer>
-
-    
 </body>
 </html>
 
