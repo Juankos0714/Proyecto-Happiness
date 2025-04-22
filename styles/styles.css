@@ -1031,7 +1031,7 @@ footer{
         align-items: center !important;
     }
     
-    /* Corrección específica para try-method-content */
+
     .try-method .try-method-content {
         display: flex !important;
         flex-direction: column !important;
